@@ -27,7 +27,7 @@
 			odio dolore aperiam neque harum, fuga optio quos, blanditiis error numquam porro fugiat
 			impedit.
 		</p>
-		<a href="collections/autamn">Show</a>
+		<a href="collections/autumn">Show</a>
 	</div>
 	<div>
 		<img src="" alt="" />
@@ -44,7 +44,7 @@
 	<div>
 		<img src="" alt="" />
 		<h1>Spring</h1>
-		<p></p>
+		<p />
 		<a href="collections/spring">Show</a>
 	</div>
 	<div>
