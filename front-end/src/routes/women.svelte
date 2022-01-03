@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Sex } from '$lib/product_selector/options';
 	import ProductSelector from '$lib/product_selector/product-selector.svelte';
 </script>
 
@@ -9,4 +10,4 @@
 	delectus eum?
 </p>
 
-<ProductSelector sex_overide="women" />
+<ProductSelector option={{ sex: Sex.Women }} />

@@ -10,7 +10,7 @@ export interface Locals {
 }
 
 export interface Product {
-	uuid: string;
+	uuid: uuid;
 	name: string;
 	collection: string;
 	sizes_available: Array<number>;

@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { Option, Collection, Sex } from '$lib/product_selector/options';
 	import ProductSelector from '$lib/product_selector/product-selector.svelte';
+
+	let collection: Collection = { name: $page.params.collection, sex: Sex.Both };
+	let option: Option = { collection };
 </script>
 
 <h1>{$page.params.collection}</h1>
@@ -10,4 +14,4 @@
 	delectus eum?
 </p>
 
-<ProductSelector collection_overide={$page.params.collection} />
+<ProductSelector {option} />
