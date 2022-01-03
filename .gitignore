@@ -1,10 +1,11 @@
 front-end/.DS_Store
 front-end/node_modules
-front-end//build
-front-end//.svelte-kit
+front-end/build
+front-end/.svelte-kit
 front-end//package
 front-end/.env
 front-end/.env.*
 front-end/.vercel
 front-end/.output
  
+back-end/target
