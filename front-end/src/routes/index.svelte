@@ -13,10 +13,7 @@
 <section>
 	<h1>
 		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
+			banner
 		</div>
 
 		to your new<br />SvelteKit appssss
@@ -26,7 +23,6 @@
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
-	<Counter />
 </section>
 
 <style>

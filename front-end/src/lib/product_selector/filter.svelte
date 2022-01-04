@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Color, Sex, Collection } from './options';
-	import type { Writable } from 'svelte/store';
 	import type { Option } from './options';
 
 	let collections: Array<Collection> = [
@@ -53,13 +52,13 @@
 						name="collections"
 						value={item.name}
 					/>
-					{item}
+					{item.name}
 				</label>
 			{/each}
 		</fieldset>
 	{/if}
 
-	{#if !option.collection}
+	{#if !option.sex}
 		<fieldset>
 			<legend>Gender</legend>
 			<label>
@@ -85,11 +84,11 @@
 		</select>
 		<label>
 			Length
-			<input type="number" name="shoe size length" id="shoe-size-length" />
+			<input type="number" name="shoe size length" id="shoe-size-length" value="40"/>
 		</label>
 		<label>
 			Width
-			<input type="number" name="shoe size length" id="shoe-size-width" />
+			<input type="number" name="shoe size length" id="shoe-size-width" value="8"/>
 		</label>
 	</fieldset>
 	<fieldset>
@@ -97,9 +96,11 @@
 		{#each colors as item}
 			<label>
 				<input type="checkbox" bind:group={colors_selected} name="colors" value={item.base} />
-				{item.base} / {item.accents}
+				{item.base}
+				{#if item.accents}
+					/ {item.accents}
+				{/if}
 			</label>
-			
 		{/each}
 	</fieldset>
 </form>
@@ -111,6 +112,9 @@
 
 	fieldset {
 		width: 100%;
+		border: none;
+		display: flex;
+		flex-direction: column;
 	}
 
 	label {
