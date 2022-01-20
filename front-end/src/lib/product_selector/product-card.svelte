@@ -16,3 +16,7 @@
 	</div>
     <a href={"/product/"+product.uuid}>View</a>
 </div>
+
+
+<style>
+</style>

@@ -3,18 +3,24 @@ export type Color = {
     accents: Array<string>
 }
 
-export enum Sex {
-    Men, Women, Both
+export type Sex ={
+    type:OptionType.Sex;
+    sex:{men| women| Both};
 }
 
 export type Collection = {
+    type:OptionType.Collection;
     name: string;
-    sex: Sex;
 }
 
-export interface Option {
-    collection?: Collection;
-    color?: Color;
-    size?: number;
-    sex?: Sex;
+export type Size = {
+    type: OptionType.Size;
+    value:number
+};
+
+export enum OptionType {
+    Collection,
+    Color,
+    Size,
+    Sex,
 }

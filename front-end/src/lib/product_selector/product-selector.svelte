@@ -12,10 +12,17 @@
 
 <div>
 	<Filter {option} />
-	<div />
+	<div>
+		{#each options as option}
+			<div>{option.name}:{option.value} <button>x</button></div>
+		{/each}
+	</div>
 	<div class="products">
 		{#each products as product}
 			<ProductCard {product} />
 		{/each}
 	</div>
 </div>
+
+
+<st

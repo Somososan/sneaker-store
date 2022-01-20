@@ -38,6 +38,10 @@
 	let colors_selected: Array<Color> = option.color ? [option.color] : [];
 
 	let shoesize: number = 270;
+
+
+
+	
 </script>
 
 <form>

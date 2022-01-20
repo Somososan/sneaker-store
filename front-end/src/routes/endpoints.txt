@@ -1,0 +1,23 @@
+Endpoints needed:
+customer:
+-login
+-product selector
+    -post filter options
+-shopping basket
+-account info
+-frontpage suggestions
+-melisearch
+
+customer-care:
+-customer search
+-shipping information
+-return information / workflow
+-customer contact moments
+
+product manager:
+-product lookup
+-add product
+-change product information
+-ingest of products
+
+
